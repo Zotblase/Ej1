@@ -6,7 +6,8 @@ public class Ej1 {
         int b = 10;
         System.out.println(dividir(a,b));
 
-        Arraylist<Integer> prueba = new Arraylist<>();
+        ArrayList<Integer> prueba = new ArrayList<>();
+        rellenarArray(prueba);
     }
 
     public static int dividir(int a, int b) {
@@ -15,6 +16,12 @@ public class Ej1 {
         }catch (Exception ArithmeticException){
             System.out.println(ArithmeticException.getMessage());
             return 0;
+        }
+    }
+
+    public static void rellenarArray(ArrayList<Integer> array){
+        for (int index = 0; index < 50; index++) {
+            array.add((int)(Math.random() * 100));
         }
     }
 
