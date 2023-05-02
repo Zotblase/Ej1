@@ -5,6 +5,8 @@ public class Ej1 {
         int a = 20;
         int b = 10;
         System.out.println(dividir(a,b));
+
+        var prueba = new Arraylist<>();
     }
 
     public static int dividir(int a, int b) {
